@@ -1,0 +1,12 @@
+{
+  "name": "FBarros Enfermagem",
+  "short_name": "FBarros",
+  "description": "Aplicativo de estudos de enfermagem com aulas, flashcards, quiz, ferramentas e progresso.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f7f6",
+  "theme_color": "#0f9f83",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
