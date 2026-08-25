@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Segurança e acessibilidade</title>
+  <desc id="desc">Escudo azul com símbolo de acessibilidade apoiado por mãos em estilo pastel.</desc>
+  <rect width="256" height="256" rx="48" fill="#FFF9F4"/>
+  <circle cx="48" cy="60" r="22" fill="#FFE0D8"/>
+  <path d="M194 48c15-19 39-4 31 14-6 13-31 27-31 27s-25-14-31-27c-8-18 16-33 31-14Z" fill="#F59AA8"/>
+  <path d="M128 38 190 65v51c0 43-24 76-62 97-38-21-62-54-62-97V65l62-27Z" fill="#78AEE8" stroke="#2F4052" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M128 55 175 75v40c0 32-16 58-47 78-31-20-47-46-47-78V75l47-20Z" fill="#A8D3F2" opacity=".55"/>
+  <circle cx="127" cy="88" r="12" fill="#FFF"/>
+  <path d="M125 105v37h28M126 121h-24" fill="none" stroke="#FFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="119" cy="159" r="27" fill="none" stroke="#FFF" stroke-width="10"/>
+  <path d="m148 143 17 30" stroke="#FFF" stroke-width="10" stroke-linecap="round"/>
+  <path d="M31 197c16-17 34-25 53-23 15 2 25 12 40 19l4 3 4-3c15-7 25-17 40-19 19-2 37 6 53 23-19 29-46 40-75 32l-22-8-22 8c-29 8-56-3-75-32Z" fill="#F4BF79" stroke="#2F4052" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M87 205c14-5 28-4 41 4M169 205c-14-5-28-4-41 4" fill="none" stroke="#D69455" stroke-width="6" stroke-linecap="round"/>
+  <path d="M37 118c16 0 16 24 32 24M219 118c-16 0-16 24-32 24" fill="none" stroke="#9ED8C6" stroke-width="9" stroke-linecap="round"/>
+</svg>
