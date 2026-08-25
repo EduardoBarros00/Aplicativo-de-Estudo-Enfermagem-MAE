@@ -3,6 +3,7 @@ import "./globals.css";
 import "./styles/shell.css";
 import "./styles/views.css";
 import "./styles/practice.css";
+import "./styles/tools.css";
 import "./styles/responsive.css";
 
 export const metadata: Metadata = {
