@@ -12,14 +12,14 @@ export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,
     onGo("quiz");
   };
 
-  if(!subject)return <>
+  if(!subject)return <div className="subjects-view">
     <div className="page-head"><span className="eyebrow">BIBLIOTECA</span><h1>Matérias e aulas práticas</h1><p>Escolha uma matéria para acessar as aulas e registrar seu progresso.</p></div>
     <div className="subject-grid large">{subjects.map(s=><SubjectCard key={s.id} subject={s} progress={progress} onClick={()=>onSubject(s)}/>)}</div>
-  </>;
+  </div>;
 
   if(!lesson){
     const done=subject.lessons.filter(l=>progress.completed.includes(l.id)).length;
-    return <>
+    return <div className="subjects-view">
       <button className="back" onClick={onBack}>← Todas as matérias</button>
       <section className="subject-hero">
         <img src={subject.image} alt=""/>
@@ -45,12 +45,12 @@ export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,
         <div className="page-head"><span className="eyebrow">REVISÃO DA FOTO · 10 QUESTÕES</span><h2>OSS, segurança e qualidade</h2><p>Conteúdo incluído a partir da folha de estudo: autonomia, PAI, disfagia, prevenção de lesões, contenção, segurança ocupacional, privacidade e acreditação.</p></div>
         <div className="lesson-list">{fundamentosFotoQuestions.map((q,i)=><article key={q.question}><b>{String(i+1).padStart(2,"0")}</b><div><h3>{q.question}</h3><p><strong>Resposta:</strong> {q.answer}</p><span>{q.explanation}</span></div></article>)}</div>
       </>}
-    </>;
+    </div>;
   }
 
   const isDone=progress.completed.includes(lesson.id);
   const favorite=progress.favoriteLessons.includes(lesson.id);
-  return <>
+  return <div className="subjects-view">
     <button className="back" onClick={()=>onLesson(null,subject)}>← Voltar às aulas</button>
     <article className="lesson-open">
       <div className="lesson-top"><div><span className="eyebrow">AULA PRÁTICA · {lesson.duration}</span><h1>{lesson.title}</h1><p>{lesson.goal}</p></div><button className={`star ${favorite?"on":""}`} onClick={()=>onFavorite(lesson.id)}>★</button></div>
@@ -65,5 +65,5 @@ export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,
         {subject.id==="desabilidade"?<button className="secondary" onClick={openSuperQuiz}>Super Quiz · 20 questões</button>:<button className="secondary" onClick={()=>onGo("quiz")}>Fazer quiz</button>}
       </div>
     </article>
-  </>;
+  </div>;
 }
