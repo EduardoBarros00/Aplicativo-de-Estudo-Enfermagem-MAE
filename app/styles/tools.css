@@ -1,0 +1,24 @@
+.tools-view .page-head .eyebrow{font-size:11px}
+.tools-view .page-head h1{font-size:38px}
+.tools-view .page-head p{font-size:14px;line-height:1.7;max-width:760px}
+.tools-view .calc,.tools-view .reference{padding:24px}
+.tools-view .calc .eyebrow{font-size:10px}
+.tools-view .calc h3,.tools-view .reference h3{font-size:18px;line-height:1.3;margin:10px 0 6px}
+.tools-view .calc>small{display:block;font-size:13px;line-height:1.5;color:var(--muted);margin-bottom:14px}
+.tools-view .calc label{font-size:13px;line-height:1.4;gap:7px}
+.tools-view .calc input,.tools-view .calc select{font-size:14px;padding:12px 13px;min-height:46px}
+.tools-view .calc-result{padding:14px 15px;margin-top:3px}
+.tools-view .calc-result span{font-size:12px;margin-bottom:4px}
+.tools-view .calc-result strong{font-size:28px;line-height:1.2}
+.tools-view .calc-result strong small{font-size:14px}
+.tools-view .reference p{font-size:13px;line-height:1.6;margin:8px 0;color:#506a65}
+.tools-view .safety{font-size:13px;line-height:1.6;padding:16px 17px}
+
+@media(max-width:700px){
+  .tools-view .page-head h1{font-size:34px}
+  .tools-view .page-head p{font-size:14px}
+  .tools-view .calc,.tools-view .reference{padding:20px}
+  .tools-view .calc h3,.tools-view .reference h3{font-size:17px}
+  .tools-view .calc label,.tools-view .reference p,.tools-view .safety{font-size:13px}
+  .tools-view .calc input,.tools-view .calc select{font-size:16px}
+}
