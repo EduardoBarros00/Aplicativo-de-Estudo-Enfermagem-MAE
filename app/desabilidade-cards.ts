@@ -1,0 +1,17 @@
+export const desabilidadeCards = [
+  { category: "Desabilidade Funcional", question: "O que significa avaliar funcionalidade?", answer: "Observar como a pessoa realiza atividades e participa da vida cotidiana, considerando capacidades, limitações e ambiente." },
+  { category: "Desabilidade Funcional", question: "O que são AVDs?", answer: "Atividades de vida diária, como higiene, vestir-se, alimentação, uso do banheiro, mobilidade e transferências." },
+  { category: "Desabilidade Funcional", question: "O que são AIVDs?", answer: "Atividades instrumentais de vida diária, como compras, preparo de refeições, transporte e organização de tarefas mais complexas." },
+  { category: "Desabilidade Funcional", question: "Qual princípio orienta a ajuda proporcional?", answer: "Ajudar apenas no que é necessário, preservando as capacidades que a pessoa ainda consegue utilizar com segurança." },
+  { category: "Desabilidade Funcional", question: "O que verificar antes de usar um andador ou cadeira de rodas?", answer: "Adequação à pessoa, integridade do equipamento, altura ou ajuste, freios e condições do ambiente." },
+  { category: "Desabilidade Funcional", question: "Por que preparar o ambiente antes de uma transferência?", answer: "Para reduzir riscos, evitar movimentos desnecessários e garantir que o destino e os apoios estejam prontos." },
+  { category: "Desabilidade Funcional", question: "Deve-se puxar a pessoa pelos braços durante uma transferência?", answer: "Não. Deve-se usar técnica segura, apoio adequado e equipamentos ou ajuda adicional quando necessários." },
+  { category: "Desabilidade Funcional", question: "Como favorecer autonomia nas atividades diárias?", answer: "Perguntar preferências, adaptar o ambiente, dar tempo e oferecer somente a ajuda necessária." },
+  { category: "Desabilidade Funcional", question: "Quais fatores ambientais podem aumentar o risco de queda?", answer: "Obstáculos, iluminação inadequada, tapetes soltos, freios não acionados, falta de apoios e acesso difícil à campainha." },
+  { category: "Desabilidade Funcional", question: "Quais fatores pessoais podem aumentar o risco de queda?", answer: "Alterações de força, equilíbrio, visão, sensibilidade, dor, tontura e mudanças recentes da capacidade funcional." },
+  { category: "Desabilidade Funcional", question: "Como se comunicar de forma inclusiva?", answer: "Falar diretamente com a pessoa, perguntar qual forma de comunicação funciona melhor e confirmar a compreensão." },
+  { category: "Desabilidade Funcional", question: "Por que manter recursos pessoais ao alcance?", answer: "Óculos, aparelhos auditivos, bengalas, cadeiras de rodas e comunicadores favorecem segurança, autonomia e participação." },
+  { category: "Desabilidade Funcional", question: "O que evitar na assistência à pessoa com limitação funcional?", answer: "Infantilização, pressupostos sobre incapacidade e fazer pela pessoa tarefas que ela consegue realizar com segurança." },
+  { category: "Desabilidade Funcional", question: "Quando comunicar uma mudança funcional à equipe?", answer: "Quando houver nova dificuldade, dor, queda, instabilidade, falha do dispositivo ou mudança importante na capacidade de realizar atividades." },
+  { category: "Desabilidade Funcional", question: "Qual é o foco do cuidado centrado na pessoa?", answer: "Combinar segurança com preferências, objetivos, dignidade, participação e independência possível." },
+];
