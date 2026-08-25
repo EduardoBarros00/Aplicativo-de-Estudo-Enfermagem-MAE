@@ -1,5 +1,5 @@
 "use client";
-import { Dispatch, SetStateAction, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { studyCards } from "../flashcards-data";
 import { fundamentosFotoCards, fundamentosFotoQuestions } from "../fundamentos-foto-data";
 import { desabilidadeCards } from "../desabilidade-cards";
@@ -9,6 +9,7 @@ import { Progress, cardId, shuffle } from "../study-state";
 type Q={id:string;question:string;answer:string;options:string[];category:string;explanation?:string};
 const allStudyCards=[...studyCards,...fundamentosFotoCards,...desabilidadeCards];
 const photoQuestionByText=new Map(fundamentosFotoQuestions.map(q=>[q.question,q]));
+const SUPER_QUIZ_SESSION_KEY="fbarros-start-desabilidade-super-quiz";
 
 export function Quiz({setProgress}:{progress:Progress;setProgress:Dispatch<SetStateAction<Progress>>}){
   const categories=Array.from(new Set(allStudyCards.map(c=>c.category)));
@@ -49,6 +50,13 @@ export function Quiz({setProgress}:{progress:Progress;setProgress:Dispatch<SetSt
     desabilidadeSuperQuiz.map(q=>({...q,id:cardId(q.category,q.question),options:shuffle(q.options)})),
     true
   );
+
+  useEffect(()=>{
+    if(typeof window!=="undefined"&&sessionStorage.getItem(SUPER_QUIZ_SESSION_KEY)==="1"){
+      sessionStorage.removeItem(SUPER_QUIZ_SESSION_KEY);
+      startSuper();
+    }
+  },[]);
 
   const answer=(option:string)=>{
     if(picked)return;
