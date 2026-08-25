@@ -46,7 +46,7 @@ export function Quiz({setProgress}:{progress:Progress;setProgress:Dispatch<SetSt
   };
 
   const startSuper=()=>resetSession(
-    desabilidadeSuperQuiz.map(q=>({...q,options:shuffle(q.options)})),
+    desabilidadeSuperQuiz.map(q=>({...q,id:cardId(q.category,q.question),options:shuffle(q.options)})),
     true
   );
 
