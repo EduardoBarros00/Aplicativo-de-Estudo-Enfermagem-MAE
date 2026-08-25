@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Atividades de vida diária</title>
+  <desc id="desc">Cuidador apoiando uma pessoa em atividade cotidiana em estilo pastel.</desc>
+  <rect width="256" height="256" rx="48" fill="#FFF9F4"/>
+  <circle cx="52" cy="48" r="20" fill="#E2F3EF"/>
+  <circle cx="209" cy="53" r="26" fill="#F7DDF0"/>
+  <path d="M45 72c0-18 14-32 32-32s32 14 32 32v19H45V72Z" fill="#F08F9A" stroke="#2F4052" stroke-width="7"/>
+  <circle cx="77" cy="66" r="18" fill="#F2B18E" stroke="#2F4052" stroke-width="6"/>
+  <path d="M62 91h30c15 0 27 12 27 27v42H35v-42c0-15 12-27 27-27Z" fill="#F6A5B0" stroke="#2F4052" stroke-width="7"/>
+  <path d="M84 126c18 8 31 20 42 36" fill="none" stroke="#F2B18E" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="164" cy="93" r="21" fill="#E9B89A" stroke="#2F4052" stroke-width="7"/>
+  <path d="M146 115h37c19 0 34 15 34 34v51h-98v-51c0-19 11-34 27-34Z" fill="#8DBDE8" stroke="#2F4052" stroke-width="7"/>
+  <path d="M148 131c-12 10-21 20-27 33" fill="none" stroke="#E9B89A" stroke-width="12" stroke-linecap="round"/>
+  <path d="M95 166h100c12 0 22 10 22 22v15H73v-15c0-12 10-22 22-22Z" fill="#EED2A8" stroke="#2F4052" stroke-width="7"/>
+  <ellipse cx="142" cy="178" rx="31" ry="13" fill="#FFF" stroke="#2F4052" stroke-width="5"/>
+  <path d="M124 176c9-11 26-12 37-2-9 9-28 11-37 2Z" fill="#A7D9B2"/>
+  <circle cx="153" cy="174" r="6" fill="#EF8E7F"/>
+  <path d="M108 154c0-12 20-12 20 0v17h-20v-17Z" fill="#BEE4F0" stroke="#2F4052" stroke-width="5"/>
+  <path d="M202 155v-20M193 139h18" stroke="#8ACCB4" stroke-width="7" stroke-linecap="round"/>
+  <path d="M189 162h26l-5 23h-16l-5-23Z" fill="#F3A5B7" stroke="#2F4052" stroke-width="5"/>
+  <path d="M54 218c46-10 103-10 151 0" fill="none" stroke="#DED4F6" stroke-width="10" stroke-linecap="round"/>
+</svg>
