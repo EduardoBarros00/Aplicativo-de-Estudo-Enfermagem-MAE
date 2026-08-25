@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Mobilidade e dispositivos de apoio</title>
+  <desc id="desc">Ilustração pastel de pessoa em cadeira de rodas com elementos de mobilidade.</desc>
+  <rect width="256" height="256" rx="48" fill="#FFF9F4"/>
+  <circle cx="62" cy="54" r="28" fill="#FFE1D7"/>
+  <circle cx="206" cy="52" r="22" fill="#E7E0FF"/>
+  <path d="M194 28v48M170 52h48" stroke="#9B82E8" stroke-width="10" stroke-linecap="round" opacity=".75"/>
+  <circle cx="104" cy="166" r="52" fill="#DDF4F3" stroke="#2F4052" stroke-width="8"/>
+  <circle cx="104" cy="166" r="31" fill="none" stroke="#86C9CB" stroke-width="7"/>
+  <circle cx="111" cy="65" r="22" fill="#F3AE91" stroke="#2F4052" stroke-width="7"/>
+  <path d="M108 89c22 0 37 13 39 37l3 27h-42l-13-38c-6-18 0-26 13-26Z" fill="#F49A87" stroke="#2F4052" stroke-width="7" stroke-linejoin="round"/>
+  <path d="M111 116h48c16 0 27 9 29 24l2 18" fill="none" stroke="#2F4052" stroke-width="8" stroke-linecap="round"/>
+  <path d="M146 151h37l14 33" fill="none" stroke="#2F4052" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="202" cy="190" r="10" fill="#86C9CB" stroke="#2F4052" stroke-width="6"/>
+  <path d="M160 118l30 63" stroke="#2F4052" stroke-width="7" stroke-linecap="round"/>
+  <path d="M217 93c-11 23-13 54-11 94" fill="none" stroke="#D38A78" stroke-width="8" stroke-linecap="round"/>
+  <path d="M206 187c0 13 8 18 18 11" fill="none" stroke="#D38A78" stroke-width="8" stroke-linecap="round"/>
+  <path d="M36 214c36-12 76-8 103 3M155 221c22-7 42-7 65-1" fill="none" stroke="#E4D8FA" stroke-width="10" stroke-linecap="round"/>
+</svg>
