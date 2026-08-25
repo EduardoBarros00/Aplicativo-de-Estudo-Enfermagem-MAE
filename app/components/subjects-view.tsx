@@ -4,7 +4,14 @@ import { fundamentosFotoQuestions } from "../fundamentos-foto-data";
 import { Progress, View } from "../study-state";
 import { SubjectCard } from "./common";
 
+const SUPER_QUIZ_SESSION_KEY="fbarros-start-desabilidade-super-quiz";
+
 export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,onComplete,onFavorite,onNote,onGo}:{progress:Progress;subject:Subject|null;lesson:Lesson|null;onSubject:(s:Subject)=>void;onLesson:(l:Lesson|null,s:Subject)=>void;onBack:()=>void;onComplete:(l:Lesson)=>void;onFavorite:(id:string)=>void;onNote:(id:string,t:string)=>void;onGo:(v:View)=>void}){
+  const openSuperQuiz=()=>{
+    if(typeof window!=="undefined")sessionStorage.setItem(SUPER_QUIZ_SESSION_KEY,"1");
+    onGo("quiz");
+  };
+
   if(!subject)return <>
     <div className="page-head"><span className="eyebrow">BIBLIOTECA</span><h1>Matérias e aulas práticas</h1><p>Escolha uma matéria para acessar as aulas e registrar seu progresso.</p></div>
     <div className="subject-grid large">{subjects.map(s=><SubjectCard key={s.id} subject={s} progress={progress} onClick={()=>onSubject(s)}/>)}</div>
@@ -31,7 +38,7 @@ export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,
           <h2>Super Quiz — Desabilidade Funcional</h2>
           <p>20 questões com correção imediata sobre AVDs, AIVDs, mobilidade, transferências, dispositivos de apoio, quedas, autonomia, comunicação e acessibilidade.</p>
         </div>
-        <button onClick={()=>onGo("quiz")}>Abrir Super Quiz →</button>
+        <button onClick={openSuperQuiz}>Começar Super Quiz →</button>
       </div>}
 
       {subject.id==="fundamentos"&&<>
@@ -52,7 +59,11 @@ export function SubjectsView({progress,subject,lesson,onSubject,onLesson,onBack,
       <ol>{lesson.steps.map((step,i)=><li key={i}>{step}</li>)}</ol>
       {lesson.tip&&<aside><b>Nota importante</b><p>{lesson.tip}</p></aside>}
       <label className="notes"><b>Minha anotação</b><textarea value={progress.notes[lesson.id]||""} onChange={e=>onNote(lesson.id,e.target.value)} placeholder="Escreva o que quer lembrar desta aula..."/></label>
-      <div className="lesson-actions"><button onClick={()=>onComplete(lesson)}>{isDone?"✓ Aula concluída":"Marcar como concluída"}</button><button className="secondary" onClick={()=>onGo("flashcards")}>Revisar flashcards</button><button className="secondary" onClick={()=>onGo("quiz")}>Fazer quiz</button></div>
+      <div className="lesson-actions">
+        <button onClick={()=>onComplete(lesson)}>{isDone?"✓ Aula concluída":"Marcar como concluída"}</button>
+        <button className="secondary" onClick={()=>onGo("flashcards")}>Revisar flashcards</button>
+        {subject.id==="desabilidade"?<button className="secondary" onClick={openSuperQuiz}>Super Quiz · 20 questões</button>:<button className="secondary" onClick={()=>onGo("quiz")}>Fazer quiz</button>}
+      </div>
     </article>
   </>;
 }
